@@ -1,0 +1,67 @@
+// .footer-form {
+//   display: flex;
+//   flex-direction: column;
+
+//   width: 570px;
+//   height: 86px;
+
+//   &-block {
+//     display: flex;
+//   }
+//   &-block input {
+//     display: inline-block;
+//     width: 100%;
+
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     padding-left: 16px;
+//     margin-right: 11px;
+
+//     color: $primary-bg-color;
+//     background: $hero-footer-bg-color;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     box-sizing: border-box;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//   }
+//   &-block input::placeholder {
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+//   &-button {
+//     background-color: $accent-color;
+//     color: $primary-bg-color;
+
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+
+//     text-decoration: none;
+
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+
+//     border-radius: 4px;
+//     margin: 0;
+//     padding-top: 10px;
+//     padding-right: 28px;
+//     padding-bottom: 10px;
+//     padding-left: 29px;
+//     cursor: pointer;
+//     border: 1px solid transparent;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+//   &-svg {
+//     width: 24px;
+//     height: 24px;
+
+//     margin-left: 10px;
+
+//     fill: $primary-bg-color;
+//   }
+// }
