@@ -1409,6 +1409,17 @@ textarea {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: -webkit-box;
