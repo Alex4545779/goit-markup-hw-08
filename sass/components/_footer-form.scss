@@ -1,67 +1,135 @@
-.footer-form {
-  display: flex;
-  flex-direction: column;
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-form-block input {
+  display: inline-block;
+  width: 100%;
 
-  width: 570px;
-  height: 86px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 11px;
 
-  &-block {
+  color: $primary-bg-color;
+  background: $hero-footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-form-block input::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-button {
+  background-color: $accent-color;
+  color: $primary-bg-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-form-svg {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+
+  fill: $primary-bg-color;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
     display: flex;
-  }
-  &-block input {
-    display: inline-block;
-    width: 100%;
+    flex-direction: column;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    margin-right: 11px;
+    width: 570px;
+    height: 86px;
 
-    color: $primary-bg-color;
-    background: $hero-footer-bg-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-  }
-  &-block input::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  &-button {
-    background-color: $accent-color;
-    color: $primary-bg-color;
+    &-block {
+      display: flex;
+    }
+    &-block input {
+      display: inline-block;
+      width: 100%;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 16px;
+      margin-right: 11px;
 
-    text-decoration: none;
+      color: $primary-bg-color;
+      background: $hero-footer-bg-color;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+    }
+    &-block input::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &-button {
+      background-color: $accent-color;
+      color: $primary-bg-color;
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
 
-    border-radius: 4px;
-    margin: 0;
-    padding-top: 10px;
-    padding-right: 28px;
-    padding-bottom: 10px;
-    padding-left: 29px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-  &-svg {
-    width: 24px;
-    height: 24px;
+      text-decoration: none;
 
-    margin-left: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 
-    fill: $primary-bg-color;
+      border-radius: 4px;
+      margin: 0;
+      padding-top: 10px;
+      padding-right: 28px;
+      padding-bottom: 10px;
+      padding-left: 29px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &-svg {
+      width: 24px;
+      height: 24px;
+
+      margin-left: 10px;
+
+      fill: $primary-bg-color;
+    }
   }
 }

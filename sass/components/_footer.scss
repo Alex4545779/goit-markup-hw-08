@@ -1,15 +1,9 @@
 .footer {
   padding-top: 60px;
-  padding-bottom: 60px;
-
   color: $primary-bg-color;
   background-color: $hero-footer-bg-color;
-
-  &-div {
-    display: flex;
-  }
-
-  &-logo {
+  text-align: center;
+  .footer-logo {
     color: #000000;
 
     font-family: $sec-font-family;
@@ -22,25 +16,42 @@
     margin-bottom: 20px;
     text-decoration: none;
   }
-  &-logo .part-logo {
+  .footer-logo .part-logo {
     color: $accent-color;
   }
-  &-block {
-    width: 231px;
-  }
-  &-address {
-    font-style: normal;
-    margin-bottom: 9px;
-  }
-  & > a {
-    color: $primary-bg-color;
-  }
-  &-info:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  &-contacts a {
-    color: rgba(255, 255, 255, 0.6);
+}
+.footer > a {
+  color: $primary-bg-color;
+}
+.footer-info:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-contacts a {
+  color: rgba(255, 255, 255, 0.6);
 
-    text-decoration: none;
+  text-decoration: none;
+}
+.footer-address {
+  font-style: normal;
+  margin-bottom: 9px;
+}
+.footer-contacts {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    color: $primary-bg-color;
+    background-color: $hero-footer-bg-color;
+
+    &-div {
+      display: flex;
+    }
+
+    &-block {
+      width: 231px;
+    }
   }
 }
