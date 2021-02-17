@@ -3,7 +3,8 @@
   color: $primary-bg-color;
   background-color: $hero-footer-bg-color;
   text-align: center;
-  .footer-logo {
+
+  &-logo {
     color: #000000;
 
     font-family: $sec-font-family;
@@ -16,28 +17,35 @@
     margin-bottom: 20px;
     text-decoration: none;
   }
-  .footer-logo .part-logo {
+
+  &-logo .part-logo {
     color: $accent-color;
   }
-}
-.footer > a {
-  color: $primary-bg-color;
-}
-.footer-info:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-contacts a {
-  color: rgba(255, 255, 255, 0.6);
 
-  text-decoration: none;
+  & > a {
+    color: $primary-bg-color;
+  }
+
+  &-info:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &-contacts a {
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+  }
+
+  &-address {
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+
+  &-contacts {
+    margin-bottom: 60px;
+  }
 }
-.footer-address {
-  font-style: normal;
-  margin-bottom: 9px;
-}
-.footer-contacts {
-  margin-bottom: 60px;
-}
+
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 60px;
