@@ -62,7 +62,26 @@
   font-size: 16px;
   line-height: 1.87;
 }
-
+@media (min-width: 768px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-item {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .project-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
 @media (min-width: 1200px) {
   .project {
     display: flex;
@@ -77,6 +96,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
   }
+
   .project-item:nth-child(3n) {
     margin-right: 0;
   }
