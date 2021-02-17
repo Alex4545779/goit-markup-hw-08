@@ -1156,9 +1156,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 32px;
   margin-bottom: 30px;
   margin-left: 32px;
+  padding-bottom: 30px;
 }
 
 .team-link {
@@ -1927,21 +1931,8 @@ textarea {
 .checkbox-label {
   position: relative;
   padding-left: 24px;
-  margin-left: 14px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.checkbox-label {
-  position: relative;
-  padding-left: 24px;
-  margin-left: 14px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1984,5 +1975,67 @@ textarea {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  .checkbox {
+    padding-bottom: 30px;
+  }
+  .checkbox-label {
+    position: relative;
+    padding-left: 24px;
+    margin-left: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .checkbox-label {
+    position: relative;
+    padding-left: 24px;
+    margin-left: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .checkbox-old {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+  }
+  .checkbox-svg {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    fill: #ffffff;
+  }
+  .checkbox-link {
+    text-decoration-skip-ink: none;
+  }
+  .checkbox-old:checked + .checkbox-svg {
+    background-color: #2196f3;
+    background-image: url(../../img/svg/icon_check_new.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+  }
 }
 /*# sourceMappingURL=main.css.map */
